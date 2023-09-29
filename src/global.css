@@ -1,0 +1,22 @@
+/* global.css */
+.global-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #61afef; /* or any other color you prefer */
+    text-decoration: none;
+  }
+
+/* global.css */
+.global-button {
+    background-color: #3498db; 
+    font-size: 1.5em;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content; /* adjust the width to fit the content */
+    text-align: center;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,56 @@
+/* src/SignUpPage.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c34; 
+  color: #abb2bf;
+  min-height: 100vh; /* takes at least the full height of the viewport */
+  margin: 0 auto;
+  max-width: 1000px; /* Set max width for the login container */
+
+}
+
+.signupBlock {
+  width: 80%; /* Changed from fixed pixel to percentage for responsiveness */
+  max-width: 300px; /* Maximum width */
+  text-align: center;
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.heading {
+  margin-bottom: 20px;
+  color: #61afef;
+  font-size: 2em;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .signupBlock {
+    padding: 10px; /* smaller padding for smaller screens */
+  }
+
+  .heading {
+    font-size: 1.5em; /* smaller font size for heading on smaller screens */
+  }
+
+  .inputField, .button {
+    padding: 8px 16px; /* smaller padding for input fields and button on smaller screens */
+  }
+}

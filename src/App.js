@@ -1,19 +1,20 @@
+// App.js
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import HomePage from "./HomePage";
-import LoginPage from "./LoginPage";
-import SignUpPage from "./SignUpPage";
-import ConfirmationPage from "./ConfirmationPage";
-import Dashboard from "./Dashboard";
+import HomePage from "./pages/HomePage/HomePage";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import SignUpPage from "./pages/SignUpPage/SignUpPage";
+import ConfirmationPage from "./pages/ConfirmationPage/ConfirmationPage";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/signup" component={SignUpPage} />
-        <Route path="/confirmation" component={ConfirmationPage} />
-        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/confirmation" element={<ConfirmationPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );
