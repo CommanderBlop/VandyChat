@@ -37,4 +37,7 @@
   .loginContainer {
     padding: 10px;
   }
+  .loginHeading {
+    font-size: 2em; /* Adjust the font size to your preference */
+  }
 }

@@ -49,6 +49,18 @@ html, body {
     .container {
       padding: 10px; /* smaller padding for smaller screens */
     }
+
+    .container .heading {
+      font-size: 2em; /* Adjust the font size to your preference */
+    }
+
+    .container .paragraph {
+      font-size: 1em;
+    }
+
+    .container .last-paragraph {
+      font-size: 1em;
+    }
   
     .button {
       font-size: 12px; /* smaller font size for buttons on smaller screens */
