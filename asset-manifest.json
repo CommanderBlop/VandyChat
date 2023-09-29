@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/VandyChat/static/css/main.d9bae651.css",
-    "main.js": "/VandyChat/static/js/main.862497b6.js",
-    "static/js/787.f479dcc5.chunk.js": "/VandyChat/static/js/787.f479dcc5.chunk.js",
-    "index.html": "/VandyChat/index.html",
-    "main.d9bae651.css.map": "/VandyChat/static/css/main.d9bae651.css.map",
-    "main.862497b6.js.map": "/VandyChat/static/js/main.862497b6.js.map",
-    "787.f479dcc5.chunk.js.map": "/VandyChat/static/js/787.f479dcc5.chunk.js.map"
+    "main.css": "/static/css/main.d9bae651.css",
+    "main.js": "/static/js/main.6ef6d1cf.js",
+    "static/js/787.f479dcc5.chunk.js": "/static/js/787.f479dcc5.chunk.js",
+    "index.html": "/index.html",
+    "main.d9bae651.css.map": "/static/css/main.d9bae651.css.map",
+    "main.6ef6d1cf.js.map": "/static/js/main.6ef6d1cf.js.map",
+    "787.f479dcc5.chunk.js.map": "/static/js/787.f479dcc5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9bae651.css",
-    "static/js/main.862497b6.js"
+    "static/js/main.6ef6d1cf.js"
   ]
 }
