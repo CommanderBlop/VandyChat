@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Dashboard.css';
+import '../../global.css';
 
 const Dashboard = () => {
   return (
