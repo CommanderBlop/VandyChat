@@ -2,13 +2,13 @@
 .global-link {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
-    color: #61afef; /* or any other color you prefer */
+    color: #EBB058; /* or any other color you prefer */
     text-decoration: none;
   }
 
 /* global.css */
 .global-button {
-    background-color: #3498db; 
+    background-color: #EBB058; 
     font-size: 1.5em;
     color: white;
     padding: 10px 20px;
