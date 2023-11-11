@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node  # Updated to the latest version
       with:
-        node-version: '16'  # Updated to use Node 16
+        node-version: '16'   # Updated to use Node 16
 
     - name: Install dependencies
       run: npm install
