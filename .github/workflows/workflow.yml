@@ -11,10 +11,10 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  # Updated to the latest version
+      uses: actions/checkout  # Updated to the latest version
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3  # Updated to the latest version
+      uses: actions/setup-node  # Updated to the latest version
       with:
         node-version: '16'  # Updated to use Node 16
 
@@ -33,7 +33,7 @@ jobs:
         # Add other environment variables here, following the same pattern
 
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@4.1.4  # Ensure you're using the latest version
+      uses: JamesIves/github-pages-deploy-action  # Ensure you're using the latest version
       with:
         branch: gh-pages  # The branch the action should deploy to.
         folder: build     # The folder the action should deploy.
