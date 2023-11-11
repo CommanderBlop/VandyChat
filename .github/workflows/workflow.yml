@@ -21,8 +21,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Build
-      run: npm run build
+    - name: Build deploy
+      run: npm run deploy
       env:
         REACT_APP_FIREBASE_API_KEY: ${{ secrets.REACT_APP_FIREBASE_API_KEY }}
         REACT_APP_FIREBASE_AUTH_DOMAIN: ${{ secrets.REACT_APP_FIREBASE_AUTH_DOMAIN }}
@@ -32,9 +32,9 @@ jobs:
         REACT_APP_FIREBASE_APP_ID: ${{ secrets.REACT_APP_FIREBASE_APP_ID }}
         # Add other environment variables here, following the same pattern
 
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4  # Ensure you're using the latest version
-      with:
-        branch: gh-pages  # The branch the action should deploy to.
-        folder: build     # The folder the action should deploy.
-        clean: true       # Automatically remove deleted files from the deployment branch
+    # - name: Deploy to GitHub Pages
+    #   uses: JamesIves/github-pages-deploy-action@v4  # Ensure you're using the latest version
+    #   with:
+    #     branch: gh-pages  # The branch the action should deploy to.
+    #     folder: build     # The folder the action should deploy.
+    #     clean: true       # Automatically remove deleted files from the deployment branch
