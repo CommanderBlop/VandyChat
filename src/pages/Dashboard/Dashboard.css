@@ -17,6 +17,22 @@
     margin-bottom: 20px;
 }
 
+.feedback-button {
+    background-color: #EBB058; /* Example button color - adjust as needed */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px; /* Adjust spacing as needed */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none; /* Removes underline from link */
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .feedback-button:hover {
+    background-color: #45a049; /* Darker shade for hover effect */
+  }
+
 .profile-pic {
     width: 100px;
     height: 100px;

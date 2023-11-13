@@ -1,0 +1,52 @@
+/* Style for the overall page */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #282c34; /* Dark background color */
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Roboto:wght@300;700&display=swap');  
+  .registration-page {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color: #282c34; /* Dark background color */
+    color: #abb2bf; /* Light text color for One Dark theme */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* takes at least the full height of the viewport */
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Style for the form */
+  .registration-page form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for the form title */
+  .registration-page h1 {
+    font-family: 'Press Start 2P', sans-serif; /* Use 'Orbitron' instead of 'Press Start 2P' */
+    font-size: 3em; /* Adjust the font size to your preference */
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  /* Style for the form label */
+  .registration-page label {
+    font-family: 'Press Start 2P', sans-serif; /* Use 'Orbitron' instead of 'Press Start 2P' */
+    font-size: 3em; /* Adjust the font size to your preference */
+    margin-bottom: 20px;
+    color: #EBB058;
+  }
+  
+  /* Style for the form input */
+  .registration-page input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  

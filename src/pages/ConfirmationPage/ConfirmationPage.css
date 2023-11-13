@@ -1,0 +1,44 @@
+.confirmation-container {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color: #282c34; /* Dark background color */
+    color: #abb2bf; /* Light text color for One Dark theme */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* takes at least the full height of the viewport */
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .confirmation-container h1 {
+    font-family: 'Orbitron', sans-serif; /* Use 'Orbitron' instead of 'Press Start 2P' */
+    font-size: 4em; /* Adjust the font size to your preference */
+    margin-bottom: 20px;
+    color: #EBB058; /* Light blue color for heading in One Dark theme */
+  }
+  
+  .confirmation-container p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+  }
+  
+  .confirmation-container button {
+    background-color: #EBB058; /* Green */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .confirmation-container button:hover {
+    background-color: #45a049;
+  }
+  

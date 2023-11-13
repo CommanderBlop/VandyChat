@@ -1,0 +1,72 @@
+.feedback-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #282c34; /* Dark background color */
+    color: #abb2bf; /* Light text color for One Dark theme */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .feedback-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #EBB058;
+    margin-bottom: 24px;
+  }
+  
+  .score-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  
+  .score-button {
+    background-color: transparent;
+    border: 2px solid #EBB058; /* Orange border */
+    color: #abb2bf; /* Light text color */
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .score-button:hover,
+  .score-button.selected {
+    background-color: #EBB058; /* Orange background for hover and selected */
+    color: #282c34; /* Dark background color */
+  }
+  
+  .submit-button {
+    background-color: #EBB058; /* Orange background */
+    color: #282c34; /* Dark text color for buttons */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #d99e30; /* Darker shade for hover */
+  }
+  
+  /* Media query adjustments if necessary */
+  @media (max-width: 600px) {
+    .feedback-title {
+      font-size: 2em;
+    }
+    .score-button {
+      font-size: 1em; /* Adjust score button font size on smaller screens */
+    }
+    .submit-button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
+  
