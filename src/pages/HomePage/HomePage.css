@@ -44,6 +44,19 @@ html, body {
     margin-bottom: 50px;
   }
   
+  .container .button {
+    background-color: #EBB058; 
+    font-size: 1.5em;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content; /* adjust the width to fit the content */
+    text-align: center;
+    text-decoration: none;
+  }
+  
   /* Media query for screens smaller than 600px */
   @media (max-width: 600px) {
     .container {
@@ -62,7 +75,7 @@ html, body {
       font-size: 1em;
     }
   
-    .button {
+    .container .button {
       background-color: #EBB058; 
       font-size: 1.5em;
       color: white;
