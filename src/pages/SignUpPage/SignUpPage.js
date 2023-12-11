@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import {useNavigate} from "react-router-dom";
 import "./SignUpPage.css";
 import "../../global.css";
 import { registerUser } from "../../firebase.js";
 
 const SignUpPage = () => {
+  let navigate = useNavigate();
+  
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -29,6 +32,7 @@ const SignUpPage = () => {
       ...formData,
     };
     registerUser(google_info.uid, userinfo);
+    navigate("/dashboard");
   };
 
   return (
