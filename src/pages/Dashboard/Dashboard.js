@@ -23,7 +23,7 @@ const Dashboard = () => {
     userData && (
       <div className="dashboard-container">
         <div className="profile-section">
-          {/* <img src="/john-doe.png" alt="John Doe" className="profile-pic"/> */}
+          <img src={userData.photoUrl} alt='Profile Pic' className='profile-pic'/>
           <h2>
             {userData.firstName} {userData.lastName}
           </h2>
