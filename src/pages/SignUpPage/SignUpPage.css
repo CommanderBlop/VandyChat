@@ -1,6 +1,6 @@
 /* src/SignUpPage.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 .container {
   font-family: 'Roboto', sans-serif;
@@ -9,48 +9,79 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #282c34; 
+  background-color: #282c34;
   color: #abb2bf;
-  min-height: 100vh; /* takes at least the full height of the viewport */
   margin: 0 auto;
   max-width: 1000px; /* Set max width for the login container */
-
 }
 
 .signupBlock {
-  width: 80%; /* Changed from fixed pixel to percentage for responsiveness */
-  max-width: 300px; /* Maximum width */
-  text-align: center;
-  background-color: #282c34;
-  padding: 20px;
+  width: 100%; /* Take up full container width */
+  max-width: 400px; /* Maximum width */
+  background-color: #20232a;
+  padding: 40px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .heading {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #61afef;
-  font-size: 2em;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 .inputField {
-  width: 100%;
+  width: calc(100% - 20px); /* Adjust width considering padding */
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
+  border: 1px solid #61afef; /* Add border to match heading color */
+  border-radius: 5px;
+  background: #333842; /* Slightly lighter than the background for contrast */
+  color: #abb2bf; /* Text color */
+}
+
+.inputField::placeholder {
+  color: #abb2bf; /* Placeholder text color */
+  opacity: 0.7; /* Slightly transparent */
+}
+
+.label {
+  display: block; /* Make label a block to fill width */
+  margin-bottom: 5px; /* Space between label and input */
+  text-align: left; /* Align text to the left */
+  color: #abb2bf;
+  font-weight: 400; /* Normal font weight for labels */
+}
+
+.global-button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
   border: none;
   border-radius: 5px;
+  background-color: #61afef;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.global-button:hover {
+  background-color: #4f9ace;
 }
 
 /* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
   .signupBlock {
-    padding: 10px; /* smaller padding for smaller screens */
+    padding: 20px; /* smaller padding for smaller screens */
   }
 
   .heading {
     font-size: 2em; /* smaller font size for heading on smaller screens */
   }
 
-  .inputField, .button {
-    padding: 8px 16px; /* smaller padding for input fields and button on smaller screens */
+  .inputField, .global-button {
+    padding: 12px 16px; /* slightly smaller padding for input fields and button on smaller screens */
   }
 }
