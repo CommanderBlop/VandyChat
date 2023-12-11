@@ -8,9 +8,9 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <div className="profile-section">
         <img src="/john-doe.png" alt="John Doe" className="profile-pic"/>
-        <h2>John Doe</h2>
-        <p>Major: Computer Science</p>
-        <p>Class of 2024</p>
+        <h2>Sam</h2>
+        <p>Major: Mathematics</p>
+        <p>Class of 2014</p>
       </div>
       
       <div className="match-section">
