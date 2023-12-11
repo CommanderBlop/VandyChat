@@ -24,7 +24,7 @@ const HomePage = () => {
           social network, broaden your horizon, and learn about things going on outside 
           of your comfort zone.
         </p> 
-      <Link to="/login" className="global-button">Get Started</Link>
+        <Link to="/login" className="button">Get Started</Link>
       </div>
     </div>
   );

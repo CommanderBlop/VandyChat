@@ -36,7 +36,7 @@ function LoginPage() {
     <div className="loginContainer">
       <h1 className="loginHeading">Login to VandyChat</h1>
       <form>
-        <button onClick={(event) => handleGoogleLogin(event)}>
+        <button className= "loginButton"onClick={(event) => handleGoogleLogin(event)}>
           Login with Google
         </button>
       </form>
