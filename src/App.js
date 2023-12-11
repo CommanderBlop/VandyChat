@@ -1,9 +1,9 @@
 // App.js
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import SignUpPage from "./pages/SignUpPage/SignUpPage";
-import ConfirmationPage from "./pages/ConfirmationPage/ConfirmationPage";
+// import ConfirmationPage from "./pages/ConfirmationPage/ConfirmationPage";
 import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
@@ -13,8 +13,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
-        <Route path="/confirmation" element={<ConfirmationPage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard/>} />
       </Routes>
     </Router>
   );
