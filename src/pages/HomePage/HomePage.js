@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
-import '../../global.css';
+// import '../../global.css';
 
 const HomePage = () => {
   return (
