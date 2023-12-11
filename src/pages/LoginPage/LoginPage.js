@@ -14,16 +14,17 @@ function LoginPage() {
     const user = await signInWithGoogle();
     if (user) {
       const userExist = await checkUserExistence(user.email);
+      const saveInfo = {
+        uid: user.uid,
+        name: user.displayName,
+        email: user.email,
+        photoUrl: user.photoURL,
+      };
+      localStorage.setItem("user", JSON.stringify(saveInfo));
+
       if (userExist) {
         navigate("/dashboard");
       } else {
-        const saveInfo = {
-          uid: user.uid,
-          name: user.displayName,
-          email: user.email,
-          photoUrl: user.photoURL,
-        };
-        localStorage.setItem("user", JSON.stringify(saveInfo));
         navigate("/signup");
       }
     } else {
