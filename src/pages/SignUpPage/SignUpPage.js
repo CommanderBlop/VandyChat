@@ -11,9 +11,13 @@ const SignUpPage = () => {
       <h1 className="heading">Create Your Account</h1>
       <div className="signupBlock">
         <form>
-          <input type="text" placeholder="Full Name" className="inputField" required />
+          <input type="text" placeholder="First name" className="inputField" required />
+          <input type="text" placeholder="Last name" className="inputField" required />
+          <input type="text" placeholder="graduation year" className="inputField" required />
+          <input type="text" placeholder="major" className="inputField" required />
+          <input type="text" placeholder="One sentence about yourself" className="inputField" required />
           <input type="email" placeholder="Email" className="inputField" required />
-          <input type="password" placeholder="Password" className="inputField" required />
+          <input type="email" placeholder="Hobbies" className="inputField" required />
           <button type="submit" className="global-button">Sign Up</button>
         </form>
         <p>
