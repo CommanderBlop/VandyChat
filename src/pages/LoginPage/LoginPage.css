@@ -40,4 +40,17 @@
   .loginHeading {
     font-size: 2em; /* Adjust the font size to your preference */
   }
+
+  .loginButton {
+    background-color: white; 
+    font-size: 1.3em;
+    color: #EBB058;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content; /* adjust the width to fit the content */
+    text-align: center;
+    text-decoration: none;
+  }
 }
