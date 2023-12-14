@@ -63,13 +63,21 @@ def best_effort_match(users, users_dict):
     return (all_matching[result_idx], all_repeats[result_idx], iters)
 
 # Get users' dictionary that maps uid to the previous matching list
-def set_users_dictionary(docs):
+def set_users_dictionary(doc_ref):
+    docs = doc_ref.stream()
     users_dict = {}
     for doc in docs:
+        doc_dic = doc.to_dict()
+        current_matches = doc_dic["currentMatch"]
+        # Update previous match by appending current match in database for the user
+        usr_ref = doc_ref.document(doc.id)
+        if len(current_matches) != 0:
+            usr_ref.update({"previousMatch": firestore.ArrayUnion(current_matches)})
+        prev_matches = doc_dic["previousMatch"]
+        # Update users dictionary
         users_dict[doc.id] = []
-        prev_match = doc.to_dict()["previousMatch"]
-        if len(prev_match) != 0:
-            for usr in prev_match:
+        if len(prev_matches) != 0:
+            for usr in prev_matches:
                 users_dict[doc.id].append(usr["uid"])
         # Set all user's current match to empty
         print(f"{doc.id} => {doc.to_dict()}")
@@ -108,10 +116,10 @@ def main():
 
     # We are fetching data from a database path "users"
     doc_ref = db.collection('users')
-    docs = doc_ref.stream()
+    
     
     # Set up users' dictionary and users' list
-    users_dict = set_users_dictionary(docs)
+    users_dict = set_users_dictionary(doc_ref)
     users_list = list(users_dict.keys())
     
     # Reeeset all user's current match field
@@ -129,9 +137,6 @@ def main():
         usr2_ref = doc_ref.document(uid2)
         matchedUser1 = get_matched_user_info(usr1_ref)
         matchedUser2 = get_matched_user_info(usr2_ref)
-        # update previous match
-        usr1_ref.update({"previousMatch": firestore.ArrayUnion([matchedUser2])})
-        usr2_ref.update({"previousMatch": firestore.ArrayUnion([matchedUser1])})
         # update current match
         usr1_ref.update({"currentMatch": firestore.ArrayUnion([matchedUser2])})
         usr2_ref.update({"currentMatch": firestore.ArrayUnion([matchedUser1])})
