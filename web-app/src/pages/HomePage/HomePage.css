@@ -1,0 +1,91 @@
+/* src/HomePage.css */
+
+/* Set the background color for the entire page */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #282c34; /* Dark background color */
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Roboto:wght@300;700&display=swap');  
+  .container {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color: #282c34; /* Dark background color */
+    color: #abb2bf; /* Light text color for One Dark theme */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* takes at least the full height of the viewport */
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .container .heading {
+    font-family: 'Orbitron', sans-serif; /* Use 'Orbitron' instead of 'Press Start 2P' */
+    font-size: 4em; /* Adjust the font size to your preference */
+    margin-bottom: 20px;
+    color: #EBB058; /* Light blue color for heading in One Dark theme */
+  }
+  
+  .container .paragraph {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+  }
+
+  .container .last-paragraph {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+    margin-bottom: 50px;
+  }
+  
+  .container .button {
+    background-color: #EBB058; 
+    font-size: 1.5em;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content; /* adjust the width to fit the content */
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Media query for screens smaller than 600px */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px; /* smaller padding for smaller screens */
+    }
+
+    .container .heading {
+      font-size: 2em;
+    }
+
+    .container .paragraph {
+      font-size: 1em;
+    }
+
+    .container .last-paragraph {
+      font-size: 1em;
+    }
+  
+    .container .button {
+      background-color: #EBB058; 
+      font-size: 1.5em;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: fit-content; /* adjust the width to fit the content */
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+  

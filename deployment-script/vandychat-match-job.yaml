@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: vandychat-match-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: vandychat-match
+        image: commanderblop/vandychat-match:v0.2
+        # command: ["python", "match.py"]
+      restartPolicy: Never
+  backoffLimit: 4

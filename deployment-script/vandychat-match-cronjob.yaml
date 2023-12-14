@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: vandychat-match-cronjob
+spec:
+  # The schedule is in Cron format "* * * * *", which is:
+  # minute hour day-of-month month day-of-week
+  schedule: "0 0 * * 0"  # This means every Sunday at midnight (0:00)
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: vandychat-match
+            image: commanderblop/vandychat-match:v0.2
+            command: ["python", "match.py"]
+          restartPolicy: OnFailure
+  # Optionally, set the concurrency policy and how many successful/failed jobs to keep
+  concurrencyPolicy: "Replace"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 3
