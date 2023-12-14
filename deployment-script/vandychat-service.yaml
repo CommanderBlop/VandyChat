@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vandychat-service
+spec:
+  selector:
+    app: vandychat
+  ports:
+    - protocol: TCP
+      port: 80  # The service port
+      targetPort: 80  # The container port
+  type: ClusterIP
+

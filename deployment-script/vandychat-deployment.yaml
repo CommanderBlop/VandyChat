@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vandychat-deployment
+spec:
+  replicas: 2  # You can adjust the number of replicas
+  selector:
+    matchLabels:
+      app: vandychat
+  template:
+    metadata:
+      labels:
+        app: vandychat
+    spec:
+      containers:
+      - name: vandychat-container
+        image: commanderblop/vandychat:v1.1
+        # image: nginx:1.14.2
+        ports:
+        - containerPort: 80  # Adjust if your container listens on a different port
+        # env:
+          # masking sensitive api information for security purpose
+
